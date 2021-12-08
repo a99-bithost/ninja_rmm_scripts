@@ -1,0 +1,7 @@
+@echo off
+Rem Daily SysImage Backup for MSP Clients
+
+Rem For this to work, NAS and Client both need an administrative user with the same name.
+
+wbadmin enable backup -addtarget:\\PATH\TO\SHARE -user:USERNAME -password:PASSWORD -schedule:HH:MM -allCritical -quiet
+
